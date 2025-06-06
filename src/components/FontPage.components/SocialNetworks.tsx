@@ -1,3 +1,4 @@
+import '../../assets/components/FontPage.components/SocialNetworks.css';
 
 const linkLinkedin = 'https://www.linkedin.com/in/manuel-rodriguez-ba5b5b339/';
 const linkWhatsapp = 'https://wa.me/3157382433';

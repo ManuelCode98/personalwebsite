@@ -1,0 +1,54 @@
+.icons {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: all 300ms;   
+}
+
+.linkedin-icon {
+    box-shadow: -3px 3px 2px #005A88, -3px 3px 2px #005A88, -3px 3px 2px #005A88;
+}
+.whatsapp-icon {
+    box-shadow: -3px 3px 2px #016F15, -3px 3px 2px #016F15, -3px 3px 2px #016F15;
+}
+.instagram-icon {
+    box-shadow: -3px 3px 2px #7F6504, -3px 3px 2px #7F6504, -3px 3px 2px #7F6504;
+}
+.facebook-icon {
+    box-shadow: -3px 3px 2px #035DD1, -3px 3px 2px #035DD1, -3px 3px 2px #035DD1;
+}
+
+.icons:hover {
+    transform: scale(1.2, 1.2) translateY(10px);
+    cursor: pointer;
+}
+
+.icons:active {
+    transform: scale(1.5, 1.5);
+    box-shadow: -2px 2px 4px black;
+}
+
+@media ( max-width: 650px ){
+
+    .icons {
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+@media ( max-width: 519px ){
+
+    .icons {
+        margin-right: 10rem;
+    }
+
+    .icons:hover {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    .icons:active {
+        transform: scale(1.5, 1.5);
+    }
+
+}

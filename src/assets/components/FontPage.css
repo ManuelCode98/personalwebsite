@@ -1,13 +1,34 @@
 .container-font-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 20rem;
-    overflow: hidden;
+    height: 25rem;
     background-image: url('../../../public/font-page/manuel.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
-.img-font-page {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.container-profile {
+    display: flex;
+    position: relative;
+    top: 5%;
+    left: 38%;
+}
+
+.container-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-social-networks {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -5%;
+    left: 45%;
 }
