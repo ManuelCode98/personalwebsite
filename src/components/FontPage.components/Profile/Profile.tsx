@@ -1,5 +1,5 @@
-import '../../assets/components/FontPage.components/Profile.css';
-// const profilePhoto = 
+import './Profile.css';
+
 
 const Profile = () => {
   return (

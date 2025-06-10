@@ -1,7 +1,7 @@
 
-import { SocialNetworks } from './FontPage.components/SocialNetworks';
-import { Profile } from './FontPage.components/Profile';
-import '../assets/components/FontPage.css';
+import { SocialNetworks } from '../FontPage.components/SocialNetworks/SocialNetworks';
+import { Profile } from '../FontPage.components/Profile/Profile';
+import './FontPage.css';
 
 
 const FontPage = () => {
@@ -11,8 +11,8 @@ const FontPage = () => {
             <Profile/>
         </div>
         <div className='container-titles'>
-            <h1>Manuel Rodriguez</h1>
-            <h2>Programador Freelance Full Stack</h2>
+            <h1 className='title'>Manuel Rodriguez</h1>
+            <h2 className='sub-title'>Programador Freelance Full Stack</h2>
         </div>
         <div className='container-social-networks'>
             <SocialNetworks/>

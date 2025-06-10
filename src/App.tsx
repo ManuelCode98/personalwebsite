@@ -1,11 +1,10 @@
-import { FontPage } from './components/FontPage';
-import { PageContent } from './components/PageContent';
+import { FontPage } from './components/FontPage/FontPage';
+import { PageContent } from './components/PageContent/PageContent';
 import './App.css';
 
 
 const App = ()=>{
-
-
+  
   return (
     <>
       <div className='container-app'> 

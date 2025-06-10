@@ -5,7 +5,7 @@
     align-items: center;
     width: 100%;
     height: 25rem;
-    background-image: url('../../../public/font-page/manuel.png');
+    background-image: url('./font-page/manuel.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -14,7 +14,7 @@
 .container-profile {
     display: flex;
     position: relative;
-    top: 5%;
+    top: 20%;
     left: 38%;
 }
 
@@ -23,12 +23,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+.title {
+    font-size: 4rem;
+}
+.sub-title {
+    color: rgb(209, 209, 209);
 }
 
 .container-social-networks {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -5%;
+    bottom: 15%;
     left: 45%;
 }
