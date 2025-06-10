@@ -1,6 +1,6 @@
 
-import { SocialNetworks } from '../FontPage.components/SocialNetworks/SocialNetworks';
-import { Profile } from '../FontPage.components/Profile/Profile';
+import { SocialNetworks } from './FontPage.components/SocialNetworks/SocialNetworks';
+import { Profile } from './FontPage.components/Profile/Profile';
 import './FontPage.css';
 
 

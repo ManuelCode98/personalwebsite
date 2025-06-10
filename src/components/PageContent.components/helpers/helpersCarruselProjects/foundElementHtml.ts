@@ -16,18 +16,6 @@ const foundElementHtml = ( htmlContainerBoxs:any, box:any )=>{
     } 
     box.classList.add( 'box-opacity' )
 
-
-    // if( getSizeTheBox < 1 ){
-
-    //     box.classList.add( 'box-opacity' )
-    
-    // }
-
-    // if( getSizeTheBoxRight > containerBoxs ){
-
-    //     box.classList.add( 'box-opacity' )
-    // }
-
 };
 
 export {
