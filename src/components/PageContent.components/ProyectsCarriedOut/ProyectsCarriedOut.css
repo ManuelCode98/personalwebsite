@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     width: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 
@@ -33,7 +33,7 @@
     grid-template-columns: repeat( 8, 1fr );
     /* margin-left: -200px; */
     transition: all 500ms;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .box-project {

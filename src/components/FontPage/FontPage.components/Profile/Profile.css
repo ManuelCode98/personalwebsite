@@ -1,7 +1,72 @@
-
-
-.img-profile {
+.container-profile {
+    display: block;
+    position: absolute;
     width: 150px;
     height: 150px;
+    top: 5%;
+    right: 5%;
     border-radius: 50%;
 }
+
+.img-profile {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 500ms;
+    object-fit: cover;
+    object-position: top;
+    border: 3px solid transparent;
+    animation: ledStrip 3s linear 500ms none normal;
+    animation-fill-mode: forwards;    
+}
+@keyframes ledStrip {
+
+    25% {
+        border-left: 3px solid #FF5742;
+    }
+    50% {
+        border-top: 3px solid #306cd4;
+                           
+    }
+    75% {
+        border-right: 3px solid #0BA568;
+        
+    }
+    100% {
+        border-left: 3px solid #FF5742;
+        border-top: 3px solid #306cd4;
+        border-right: 3px solid #0BA568;
+        border-bottom: 3px solid #a5951e;
+               
+    }
+    
+}
+
+.title-age {
+    width: auto;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 500ms;
+}
+
+.container-profile:hover .img-profile {
+    opacity: 0;
+    transform: rotateY( 180deg );    
+}
+.container-profile:hover .title-age {
+    font-size: 1.2rem;
+    opacity: 1;
+    z-index: 1;
+    pointer-events: all;
+    transform: rotateY( 360deg );
+       
+}
+
