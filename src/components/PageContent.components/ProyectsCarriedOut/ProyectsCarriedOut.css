@@ -1,3 +1,8 @@
+@font-face {
+    font-family: '1942report';
+    src: url( '../../../assets//1942report/1942.ttf');
+}
+
 .container-projects-and-buttons {
     display: flex;
     flex-direction: row;
@@ -13,12 +18,15 @@
     background-color: transparent;
     color: white;
     font-size: 5rem;
-    width: 6rem;
-    height: 6rem;
     border: none;
     transition: transform 500ms;
-    border: 1px solid white;
-    /* border-radius: 50%; */
+    cursor: pointer;
+    font-family: '1942report', Arial, Helvetica, sans-serif;
+    transition: all 500ms;
+    text-shadow: 2px 2px 2px rgb(177, 88, 56);
+}
+.buttons-projects:hover {
+    color: rgb(255, 74, 8);
 }
 .buttons-projects:active {
     transform: scale( 1.2, 1.2);
@@ -31,9 +39,7 @@
     height: 6rem;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat( 8, 1fr );
-    /* margin-left: -200px; */
     transition: all 500ms;
-    /* border: 1px solid green; */
 }
 
 .box-project {

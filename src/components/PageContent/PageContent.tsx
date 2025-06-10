@@ -2,7 +2,7 @@ import { ProyectsCarriedOut } from "../PageContent.components/ProyectsCarriedOut
 import './PageContent.css';
 
 
-const titleMore:string =  'Ver mas...' 
+const titleMore:string =  'Ver mas' 
 const PageContent = () => {
   return (
     <div className="container-projects">

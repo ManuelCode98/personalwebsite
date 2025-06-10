@@ -1,20 +1,45 @@
 .container-projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: black;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
 }
 
 .title-more {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
   height: 15%;
   color: white;
   font-size: 2rem;
   background-color: transparent;
-  /* border: 1px solid red; */
+  animation: titleMore 5s linear 1s infinite;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.title-more:hover {
+  transform: scaleX( 1.1 );
+}
+.title-more:hover::after {
+  content: '↓';
+}
+.title-more:active {
+  transform: translateY(-300px);
+  opacity: 0;
+}
+
+@keyframes titleMore {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #0BA468;
+  }
+  100%{
+    color: #07f898;
+  }
 }

@@ -57,12 +57,9 @@ const ProyectsCarriedOut = () => {
     <div className='container-projects-and-buttons'>
       <button className='buttons-projects' onClick={ decrease }>{'<'}</button>
       <div ref={containerBoxsRef } className='container-boxs' style={sizesContainerFather()}>
-        {/* { arrMyProjectsState && arrMyProjectsState.map( (project:any, index:number) => ( */}
         { awaitResponse && arrMyProjectsState.map( (project:any, index:number) => (
           
           <div key={project.id} className={`box-project box${project.id}`} style={addStyleAccordingToItsIndex( index )} >{project.name} {project.id}</div>
-
-
         ))}
         
       </div>
