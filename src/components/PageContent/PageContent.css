@@ -28,7 +28,7 @@
   content: '↓';
 }
 .title-more:active {
-  transform: translateY(-300px);
+  /* transform: translateY(-300px); */
   opacity: 0;
 }
 
@@ -37,9 +37,9 @@
     color: white;
   }
   50% {
-    color: #0BA468;
+    color: #40b1ee;
   }
   100%{
-    color: #07f898;
+    color: #79cffd;
   }
 }

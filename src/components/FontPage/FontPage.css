@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    
 }
 
 .container-titles {
@@ -82,10 +83,3 @@
 }
 
 
-.container-social-networks {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -10%;
-    left: 45%;
-}

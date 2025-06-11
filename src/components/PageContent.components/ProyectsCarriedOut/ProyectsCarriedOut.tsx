@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import './ProyectsCarriedOut.css';
 import { myProjects } from '../../../database/myProjectsDatabase';
 import { addStyleAccordingToItsIndex } from '../helpers/addStyleAccordingToItsIndex';
-import { sizesContainerFather } from '../helpers/sizesContainerFather';
 import { CarruselProjects } from '../helpers/carrouselProjects';
+import { takeToTheProject } from './helpers/takeToTheProject';
 
 
 const ProyectsCarriedOut = () => {
@@ -11,7 +11,6 @@ const ProyectsCarriedOut = () => {
   const containerBoxsRef = useRef<HTMLDivElement>(null)
   const [ arrMyProjectsState, setArrMyProjectsState ]:any = useState([]);  
   const [ awaitResponse, setAwaitResponse ] = useState<boolean>( false );
-
   
   useEffect(()=>{ 
 
@@ -52,14 +51,20 @@ const ProyectsCarriedOut = () => {
     CarruselProjects(  )
   };
 
+  
 
   return (
     <div className='container-projects-and-buttons'>
       <button className='buttons-projects' onClick={ decrease }>{'<'}</button>
-      <div ref={containerBoxsRef } className='container-boxs' style={sizesContainerFather()}>
+      <div ref={containerBoxsRef } className='container-boxs' >
         { awaitResponse && arrMyProjectsState.map( (project:any, index:number) => (
           
-          <div key={project.id} className={`box-project box${project.id}`} style={addStyleAccordingToItsIndex( index )} >{project.name} {project.id}</div>
+          <div key={project.id}
+              className={`box-project`} 
+              style={addStyleAccordingToItsIndex( index )} 
+              onClick={ takeToTheProject }>
+              <img className='img-project-small' src={project.img} alt={ `l${project.id}` } />
+          </div>
         ))}
         
       </div>

@@ -12,7 +12,9 @@ const App = ()=>{
         <FontPage/>
         <PageContent/>
       </div>
-      <ContainerAllProjects/>
+      <div className='container-app2'>
+        <ContainerAllProjects/>
+      </div>
     </>
   )
 };

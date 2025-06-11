@@ -1,21 +1,42 @@
 import './ContainerAllProjects.css';
 import { myProjects } from '../../database/myProjectsDatabase';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+let passRefOfTheDiv:any; 
 
 const ContainerAllProjects = () => {
 
+  const refDivElement = useRef<HTMLDivElement>(null);
+  const [ selectDivSection, setSelectDivSection ] = useState<HTMLDivElement>()
   const [ projects, setProjects ] = useState<any[]>([]);
   useEffect(()=>{ 
     setProjects( myProjects )
-   },[]);  
+   },[]);
+      
+  useEffect(()=>{
+
+    const elementDiv = refDivElement.current
+    
+    if(elementDiv){
+      setSelectDivSection( elementDiv )
+      passRefOfTheDiv = selectDivSection;
+    }
+  },[ projects ]);
+
 
   return (
-    <div className="container-all-projects">
+    <div ref={ refDivElement } className="container-all-projects">
         { 
             projects.map( project =>(
-                <div key={project.id} className='container-project'>
-                    <img className='img-catalog' src='https://plus.unsplash.com/premium_photo-1726754457459-d2dfa2e3a434?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhhY2tlciUyMGRlJTIwY29tcHV0YWRvcmF8ZW58MHx8MHx8fDA%3D' alt={ project.name } />
-                    <div className='container-info'>0</div>
+                <div key={project.id} className={ `container-project l${ project.id }` }>
+                    <img className='img-catalog' src={ project.img } alt={ project.name } />
+                    <div className='container-info'>
+                      <h3 className='title-name-project'>{ project.name }</h3>
+                      { project.linkWeb.length > 1 ?
+                        <p className={`link-prototipo`}><a href={ project.linkWeb } target='_blank'>Link de la web</a></p>
+                        :<p className={`link-prototipo`}><a href='#' target='_blank'>Ver prototipo</a></p> 
+                      }
+                    </div>
                 </div>
             ))
         }
@@ -24,5 +45,6 @@ const ContainerAllProjects = () => {
 }
 
 export {
-    ContainerAllProjects
+    ContainerAllProjects,
+    passRefOfTheDiv
 }
