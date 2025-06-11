@@ -1,6 +1,10 @@
+* {
+  background-color: #001f30;
+}
 
 html, body {
   height: 100%;
   padding: 0%;
   margin: 0%;
+  
 }

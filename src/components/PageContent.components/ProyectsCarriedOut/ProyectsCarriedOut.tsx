@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './ProyectsCarriedOut.css';
-import { myProjects } from './myProjectsDatabase';
+import { myProjects } from '../../../database/myProjectsDatabase';
 import { addStyleAccordingToItsIndex } from '../helpers/addStyleAccordingToItsIndex';
 import { sizesContainerFather } from '../helpers/sizesContainerFather';
 import { CarruselProjects } from '../helpers/carrouselProjects';

@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
+    background-color: transparent;
 
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -29,6 +30,7 @@
     animation-fill-mode: forwards;
     opacity: 0.2;
     color: transparent;
+    background-color: transparent;
     
 }
 
@@ -40,6 +42,7 @@
     font-size: 1.7rem;
     opacity: 0.2;
     color: transparent;
+    background-color: transparent;
 }
 .title:hover, .sub-title:hover {
     transform: scale( 1.1, 1.1 );

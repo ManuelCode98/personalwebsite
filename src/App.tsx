@@ -1,6 +1,7 @@
 import { FontPage } from './components/FontPage/FontPage';
 import { PageContent } from './components/PageContent/PageContent';
 import './App.css';
+import { ContainerAllProjects } from './components/ContainerAllProjects/ContainerAllProjects';
 
 
 const App = ()=>{
@@ -11,6 +12,7 @@ const App = ()=>{
         <FontPage/>
         <PageContent/>
       </div>
+      <ContainerAllProjects/>
     </>
   )
 };
