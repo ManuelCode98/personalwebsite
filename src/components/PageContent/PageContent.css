@@ -44,3 +44,14 @@
   }
 }
 
+@media ( max-width: 1700px ){
+  .title-more {
+    margin-top: 5rem;
+  }
+}
+
+@media ( max-width: 1400px ){
+  .title-more {
+    margin-top: 2rem;
+  }
+}

@@ -82,6 +82,18 @@
     
 }
 
+@media ( max-width: 1700px ){
+    .container-font-page {
+        height: 36rem;
+    }
+}
+
+@media ( max-width: 1400px ){
+  .container-font-page {
+        height: 25rem;
+    }
+}
+
 @media ( max-width: 952px ){
     .container-font-page {
         align-items: start;
