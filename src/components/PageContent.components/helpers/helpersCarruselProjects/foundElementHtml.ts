@@ -4,16 +4,14 @@ const foundElementHtml = ( htmlContainerBoxs:any, box:any )=>{
     
     const containerBoxs = htmlContainerBoxs.getBoundingClientRect();
     const getSizeTheBox = box.getBoundingClientRect();
-
+    console.log(box);
     if( getSizeTheBox.left > containerBoxs.left && getSizeTheBox.right < containerBoxs.right ){
-        
-        const findClass = box.className.includes('box-opacity');
-        
-        if( findClass ){
-            box.classList.remove('box-opacity');          
-        }
+            
+        box.classList.remove('box-opacity');          
+    
         return
     } 
+    
     box.classList.add( 'box-opacity' )
 
 };
