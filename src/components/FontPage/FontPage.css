@@ -82,15 +82,21 @@
     
 }
 
-@media ( max-width: 1700px ){
+@media (min-width: 1440px) and (max-width: 1920px){
     .container-font-page {
-        height: 36rem;
+        height: 34rem;
     }
 }
 
-@media ( max-width: 1400px ){
+@media (min-width: 1281px) and (max-width: 1439px){
   .container-font-page {
         height: 25rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container-font-page {
+        height: 40rem;
     }
 }
 
@@ -115,14 +121,19 @@
     }  
 }
 
-@media ( max-width:543px ){
+@media ( max-width:600px ){
+
+    .container-font-page {
+        height: 35rem;
+    }
+
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     
     }
 
     .sub-title {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     
     }
       
