@@ -72,3 +72,18 @@
        
 }
 
+@media ( max-width: 766px ){
+    .container-profile {
+        width: 100px;
+        height: 100px;
+    }   
+}
+
+@media ( max-width:543px ){
+    .container-profile {
+        width: 85px;
+        height: 85px;
+        top: 3%;
+    }   
+      
+}

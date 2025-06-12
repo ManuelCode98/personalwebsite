@@ -82,4 +82,36 @@
     
 }
 
+@media ( max-width: 952px ){
+    .container-font-page {
+        align-items: start;
+    }
+    .container-titles {
+        margin-left: 3rem;
+    }  
+}
 
+@media ( max-width: 766px ){
+    .title {
+        font-size: 3rem;
+    
+    }
+
+    .sub-title {
+        font-size: 1.3rem;
+    
+    }  
+}
+
+@media ( max-width:543px ){
+    .title {
+        font-size: 2rem;
+    
+    }
+
+    .sub-title {
+        font-size: 1.2rem;
+    
+    }
+      
+}

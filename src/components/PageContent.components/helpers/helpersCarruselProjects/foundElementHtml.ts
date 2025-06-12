@@ -4,7 +4,7 @@ const foundElementHtml = ( htmlContainerBoxs:any, box:any )=>{
     
     const containerBoxs = htmlContainerBoxs.getBoundingClientRect();
     const getSizeTheBox = box.getBoundingClientRect();
-    console.log(box);
+    
     if( getSizeTheBox.left > containerBoxs.left && getSizeTheBox.right < containerBoxs.right ){
             
         box.classList.remove('box-opacity');          

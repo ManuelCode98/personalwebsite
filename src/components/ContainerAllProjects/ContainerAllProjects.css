@@ -81,4 +81,15 @@
 
 .link-prototipo > a:hover {
     color: #40b1ee;
-} 
+}
+
+@media ( max-width:543px ){
+    
+    .container-all-projects {
+        grid-template-columns: repeat( 1, 1fr );
+    }
+    
+    .container-project {
+        height: 20rem;
+    }
+}
