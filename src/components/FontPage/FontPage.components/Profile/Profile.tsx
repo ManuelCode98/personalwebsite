@@ -1,3 +1,4 @@
+import { addOrRemoveClass } from './helpers/addOrRemoveClass';
 import { returnAge } from './helpers/calculateBirthdate';
 import './Profile.css';
 
@@ -10,12 +11,10 @@ const birthdate = {
 
 const Profile = () => {
 
-  // console.log(returnAge( birthdate ));
-
   return (
     <div className='container-profile'>
-      <img className='img-profile' src="./profile/perfil.jpg" alt="Foto de perfil" />
-      <h3 className='title-age'>{returnAge( birthdate )} Años</h3>
+      <img className='img-profile' onClick={ addOrRemoveClass } src="./profile/perfil.jpg" alt="Foto de perfil" />
+      <h3 className='title-age' onClick={ addOrRemoveClass } >{returnAge( birthdate )} Años</h3>
     </div>
       
   )

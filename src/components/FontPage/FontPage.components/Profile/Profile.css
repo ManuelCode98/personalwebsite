@@ -59,11 +59,12 @@
     background-color: transparent;
 }
 
-.container-profile:hover .img-profile {
+.container-profile .rotate-profile {
     opacity: 0;
     transform: rotateY( 180deg );    
 }
-.container-profile:hover .title-age {
+
+.container-profile .show-age {
     font-size: 1.2rem;
     opacity: 1;
     z-index: 1;
@@ -71,6 +72,7 @@
     transform: rotateY( 360deg );
        
 }
+
 
 @media ( max-width: 766px ){
     .container-profile {
