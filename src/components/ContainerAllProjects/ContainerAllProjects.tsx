@@ -34,7 +34,7 @@ const ContainerAllProjects = () => {
                       <h3 className='title-name-project'>{ project.name }</h3>
                       { project.linkWeb.length > 1 ?
                         <p className={`link-prototipo`}><a href={ project.linkWeb } target='_blank'>Link de la web</a></p>
-                        :<p className={`link-prototipo`}><a href='#' target='_blank'>Ver prototipo</a></p> 
+                        :<p className={`link-prototipo`}><a href={ project.linkPrototype } target='_blank'>Ver prototipo</a></p> 
                       }
                     </div>
                 </div>
