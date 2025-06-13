@@ -22,7 +22,8 @@
     object-position: top;
     border: 3px solid transparent;
     animation: ledStrip 3s linear 500ms none normal;
-    animation-fill-mode: forwards;    
+    animation-fill-mode: forwards;
+    cursor: pointer;    
 }
 @keyframes ledStrip {
 
@@ -57,11 +58,13 @@
     pointer-events: none;
     transition: all 500ms;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .container-profile .rotate-profile {
     opacity: 0;
-    transform: rotateY( 180deg );    
+    transform: rotateY( 180deg );
+    cursor: default;    
 }
 
 .container-profile .show-age {

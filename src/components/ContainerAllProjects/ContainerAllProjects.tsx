@@ -1,6 +1,7 @@
 import './ContainerAllProjects.css';
 import { myProjects } from '../../database/myProjectsDatabase';
 import { useEffect, useRef, useState } from 'react';
+import { saveOrShowTheCard } from './helpers/saveOrShowTheCard';
 
 let passRefOfTheDiv:any; 
 
@@ -28,9 +29,11 @@ const ContainerAllProjects = () => {
     <div ref={ refDivElement } className="container-all-projects">
         { 
             projects.map( project =>(
-                <div key={project.id} className={ `container-project l${ project.id }` }>
-                    <img className='img-catalog' src={ project.img } alt={ project.name } />
-                    <div className='container-info'>
+                <div key={project.id} className={ `container-project l${ project.id }` } 
+                      onClick={ saveOrShowTheCard }
+                  >
+                    <img className='img-catalog img-catalog-hover' src={ project.img } alt={ project.name } />
+                    <div className='container-info container-info-hover'>
                       <h3 className='title-name-project'>{ project.name }</h3>
                       { project.linkWeb.length > 1 ?
                         <p className={`link-prototipo`}><a href={ project.linkWeb } target='_blank'>Link de la web</a></p>

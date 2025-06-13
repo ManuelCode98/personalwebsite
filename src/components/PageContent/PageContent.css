@@ -21,16 +21,10 @@
   cursor: pointer;
 }
 
-.title-more:hover {
-  transform: scaleX( 1.1 );
-}
 .title-more:hover::after {
   content: '↓';
 }
-.title-more:active {
-  /* transform: translateY(-300px); */
-  opacity: 0;
-}
+
 
 @keyframes titleMore {
   0% {
@@ -60,7 +54,20 @@
   .title-more {
     margin-top: 5rem;
   }
+
 }
+
+@media (max-width: 768px){
+  .title-more:hover::after {
+    content: none;
+  }
+  .title-more:active::after {
+    content: '↓';
+  }
+
+}
+
+
 
 @media ( max-width:600px ){
 

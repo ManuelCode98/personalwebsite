@@ -45,13 +45,6 @@
     color: transparent;
     background-color: transparent;
 }
-.title:hover, .sub-title:hover {
-    transform: scale( 1.1, 1.1 );
-    color: rgb(144, 211, 205) !important;
-    
-}
-
-
 
 @keyframes title {
     0% {

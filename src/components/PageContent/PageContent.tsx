@@ -8,7 +8,7 @@ const PageContent = () => {
 
   const goToTheSection = ( divElement:HTMLDivElement )=>{ 
     
-    if( divElement )divElement.scrollIntoView( { behavior: 'smooth' } );
+    if( divElement ) divElement.scrollIntoView( { behavior: 'smooth' } );
   };
 
   return (
