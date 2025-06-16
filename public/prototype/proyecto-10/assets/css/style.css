@@ -78,8 +78,8 @@ body {
 }
 
 .results__result {
-    width: 25%;
-    border-right: 1px solid #ddd;
+    width: 33%;
+    /* border-right: 1px solid #ddd; */
 }
 
 .results__result:nth-child(2){
@@ -110,4 +110,33 @@ body {
     outline: none;
     border: none;
     margin-top: -6rem;
+}
+
+@media ( max-width: 768px ){
+    .layout__search {
+        width: 80%;
+    }
+
+    .layout__results {
+        width: 80%;
+    }
+}
+
+@media ( max-width: 600px ){
+    .layout__search {
+        width: 95%;
+    }
+
+    .layout__results {
+        width: 95%;
+    }
+    
+    .results__subtitle {
+        font-size: 0.5rem;
+        
+    }
+
+    .result__title {
+        font-size: 1.2rem;
+    }
 }

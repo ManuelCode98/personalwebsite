@@ -93,3 +93,15 @@ body {
     transform: scaleX(1.3) scaleY(1.5);
     opacity: 0;
 }
+
+@media (max-width:600px){
+    .layout__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons__btn2 {
+        position: relative;
+    }
+}

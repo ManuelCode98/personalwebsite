@@ -124,3 +124,10 @@ body {
     font-weight: bold;
     
 }
+
+@media (max-width:600px) {
+    .layout__main {
+        width: 95%;
+    }
+    
+}

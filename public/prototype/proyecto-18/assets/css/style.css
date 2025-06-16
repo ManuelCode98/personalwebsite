@@ -108,3 +108,45 @@ body {
 .user__icon:hover {
     background-color: #056a89;
 }
+
+@media (max-width:768px) {
+    .layout__card {
+        width: 95%;
+    }
+}
+
+@media (max-width:600px) {
+    .layout__card {
+        width: 95%;
+    }
+
+    .car__content {
+        flex-basis: 95%;
+        padding: 1rem 2rem;
+    }
+
+    .card__title {
+        font-size: 1.5rem;
+    }
+
+    .card__description {
+        font-size: 1.2rem;
+    
+    }
+
+    .card__container-img {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__img {
+        flex-basis: 95%;
+        height: 8rem;
+        object-fit: cover;
+    }
+
+    
+}

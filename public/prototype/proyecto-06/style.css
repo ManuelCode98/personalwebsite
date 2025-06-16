@@ -19,7 +19,7 @@ body {
 }
 
 .layout__main {
-    min-width: 475px;
+    width: 475px;
 }
 
 .main__title {
@@ -165,4 +165,14 @@ body {
 .form__submit:hover {
     background-color: #2A4D65;
     transition: all 300ms linear;
+}
+
+@media (max-width:600px) {
+    .layout__main {
+        width: 90%;
+    }
+
+    .generate__mail {
+        font-size: 2rem;
+    }
 }

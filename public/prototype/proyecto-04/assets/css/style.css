@@ -210,3 +210,16 @@ body {
     font-size: 1.4rem;
     color: #8f8f8f;
 }
+
+@media (max-width:600px) {
+    .layout {
+        width: 90%;
+    }
+
+    .search__control{
+        width: 65%;
+    }
+    .search__select {
+        width: 35%;
+    }
+}

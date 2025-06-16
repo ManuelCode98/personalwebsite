@@ -106,3 +106,9 @@ body {
     font-size: 1.4rem;
     opacity: 0.5;
 }
+
+@media (max-width:600px) {
+    .layout__main {
+        min-width: 30rem;
+    }
+}

@@ -177,3 +177,65 @@ body {
 .form__btn:hover {
     background-color: #5129f2;
 }
+
+@media (min-width:1440px){
+    .layout__main {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 75%;
+    }
+}
+
+@media (max-width:1366px){
+    .layout__main {
+        margin: 0px;
+        margin: 0px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 90%;
+    }
+}
+
+@media (max-width:768px){
+    .layout__main {
+        width: 95%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 70%;
+    }
+}
+
+@media (max-width:600px){
+
+    .layout {
+        position: relative;
+        height: 100vh;
+    }
+    .layout__main {
+        width: 95%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        height: 85%;
+    }
+
+    .main__left {
+        display: none;
+    }
+
+    .main__right {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .main__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .main__form {
+        width: 100%;
+        padding: 1rem;
+    }
+}

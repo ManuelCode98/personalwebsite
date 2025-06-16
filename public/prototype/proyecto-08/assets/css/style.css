@@ -19,7 +19,7 @@ body {
 }
 
 .layout__main {
-    min-width: 90rem;
+    width: 90rem;
 
 }
 
@@ -186,4 +186,42 @@ body {
 
 .toggle__checkbox:checked + .toggle__slider::before {
     transform: translateX(22px);
+}
+
+@media (max-width:768px) {
+    .layout__main {
+        width: 95%;
+    }
+}
+
+@media (max-width:600px) {
+
+    .layout {
+        position: relative;
+    }
+
+    .layout__main {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .main__title{
+        margin-top: 2rem;
+    }
+
+    .main__prices {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .prices__price {
+        width: 90%;
+        margin-left: 2rem;
+    }
+
+    .main__toggle {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }
