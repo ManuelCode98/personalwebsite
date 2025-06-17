@@ -11,11 +11,13 @@ const ratioCircumference = 2 * Math.PI * ratio;
 let stopInterval;
 // console.log(ratioCircumference);
 
+let minutes;
+let seconds;
+let buttonStart = false;
 
-selectButtonStart.addEventListener( 'click', (e)=>{
+const startCronometer = ()=>{ 
 
-    let minutes;
-    let seconds;
+    if( buttonStart ) return
 
     if( localStorage.length ){
         minutes = parseInt( localStorage.getItem('minutes') ) || 0;
@@ -27,7 +29,7 @@ selectButtonStart.addEventListener( 'click', (e)=>{
 
         const totalPorcentageCircle = seconds / 59;
         const offset = ratioCircumference * ( 1 - totalPorcentageCircle );
-        
+
         seconds = seconds + 1;
 
         if (seconds === 59 ) {
@@ -52,36 +54,44 @@ selectButtonStart.addEventListener( 'click', (e)=>{
 
         clearInterval( initialInterval )
         
-    }; 
+    };
 
-});
+    buttonStart = true;
+    buttonStop = false;
+    console.log('hola');
 
+};
 
-selectButtonStop.addEventListener( 'click', ({ target })=>{
+const stopCronometer = ({ target })=>{ 
 
-
-
-        if( target.innerHTML === 'Pausar' ){       
+    if( target.innerHTML === 'Pausar' ){       
             
-            selectButtonStop.innerHTML = 'Reiniciar';
-            stopInterval( 'initialInterval' )
+        selectButtonStop.innerHTML = 'Reiniciar';
+        stopInterval( 'initialInterval' )
+        buttonStart = false;
 
-            return
-        }
-        
-        if( target.innerHTML === 'Reiniciar' ){
+        return
+    }
+    
+    if( target.innerHTML === 'Reiniciar' ){
 
-            stopInterval( 'initialInterval' )
-            localStorage.setItem('minutes', 0)
-            localStorage.setItem('seconds', 0)
-            minutes = 0
-            seconds = 0
+        stopInterval( 'initialInterval' )
+        localStorage.setItem('minutes', 0)
+        localStorage.setItem('seconds', 0)
+        minutes = 0
+        seconds = 0
 
-            selectCronometer.innerHTML = `${minutes}:${seconds}`
+        selectCronometer.innerHTML = `${minutes}:${seconds}`
+        selectButtonStop.innerHTML = 'Pausar';
 
-            selectButtonStop.innerHTML = 'Pausar';
-        }
+        buttonStart = false;
+    }
+};
 
-    })
+
+selectButtonStart.addEventListener( 'click', startCronometer );
+
+
+selectButtonStop.addEventListener( 'click', stopCronometer )
 
 

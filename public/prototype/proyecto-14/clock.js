@@ -20,6 +20,5 @@ const ratioCircumference = 2 * Math.PI * ratio;
         selectCronometer.innerHTML = `${dateHours}:${dateMinutes}`
         selectCicleProcess.style.strokeDashoffset = offset;
 
-        console.log(dateSeconds);
     }, 1000);    
 
