@@ -1,0 +1,147 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.layout {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #B0B3D9;
+}
+
+.layout__main {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container {
+    background-color: #151932;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 100%;
+    /* padding: 3rem; */
+}
+
+.main__crono {
+    display: flex;
+    position: relative;
+    top: -100%;
+    left: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #D6DFFE;
+    border-radius: 100%;
+
+    width: 100%;
+    height: 100%;
+}
+
+.crono__time {
+    font-size: 8rem;
+    font-weight: 700;
+    color: #D6DFFE;
+}
+
+.crono__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.crono__pause,
+.crono__start {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #99F870;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.crono__pause:hover,
+.crono__start:hover {
+    background-color: #B0B3D9;
+
+}
+
+.svg-circle {
+    transform: rotate( -90deg );
+    border-radius: 50%;
+ 
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.cicle-background {
+    stroke: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.cicle-process {
+    stroke: #99F870;
+    stroke-dasharray: 942;
+    stroke-dashoffset: 942;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.main__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.8rem;
+    border-radius: 5rem;
+    background-color: #151932;
+    margin-top: 4rem;
+}
+
+.nav__item {
+    color: white;
+    opacity: 0.5;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    
+}
+
+.btn-alarm,
+.nav__item:hover {
+    opacity: 1;
+    border-radius: 5rem;
+    color: #151932;
+    background-color: #99F870;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width:600px) {
+    .main__container{
+        width: 38rem;
+        height: 38rem;
+    }
+
+    .main__nav {
+        width: 75%;
+    }
+}
