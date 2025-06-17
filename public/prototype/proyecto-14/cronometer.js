@@ -18,8 +18,8 @@ selectButtonStart.addEventListener( 'click', (e)=>{
     let seconds;
 
     if( localStorage.length ){
-        minutes = parseInt( localStorage.getItem('minutes') );
-        seconds = parseInt( localStorage.getItem('seconds') );
+        minutes = parseInt( localStorage.getItem('minutes') ) || 0;
+        seconds = parseInt( localStorage.getItem('seconds') ) || 0;
         selectButtonStop.innerHTML = 'Pausar';
     }    
 
