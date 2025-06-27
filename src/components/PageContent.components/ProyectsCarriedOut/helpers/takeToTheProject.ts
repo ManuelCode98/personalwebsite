@@ -7,10 +7,10 @@ const takeToTheProject = ( { target }:any )=>{
     if( selectDivElementGoClass ){
 
       selectDivElementGoClass.scrollIntoView( { behavior: 'smooth' } )
-      selectDivElementGoClass.classList.add( 'box-select' );
+      selectDivElementGoClass.classList.toggle( 'box-select' );
 
       setTimeout(() => {
-        selectDivElementGoClass.classList.remove( 'box-select' );
+        selectDivElementGoClass.classList.toggle( 'box-select' );
       }, 3000);
     }
 };

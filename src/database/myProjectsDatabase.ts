@@ -65,6 +65,13 @@ const myProjects: MyProjects[] = [
         linkWeb: '',
     },
     {
+        id:'16',
+        name: 'Supermarket List',
+        img: 'https://i.ibb.co/M4k5RgB/Supermarket-list.jpg',
+        linkPrototype: '',
+        linkWeb: 'https://micarritodecompras.netlify.app/',
+    },
+    {
         id:'9',
         name: 'Encuesta',
         img: 'https://i.ibb.co/pjnpHDnF/rango-de-edades.png',

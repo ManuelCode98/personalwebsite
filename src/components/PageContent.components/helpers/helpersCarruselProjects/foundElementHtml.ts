@@ -7,12 +7,12 @@ const foundElementHtml = ( htmlContainerBoxs:any, box:any )=>{
     
     if( getSizeTheBox.left > containerBoxs.left && getSizeTheBox.right < containerBoxs.right ){
             
-        box.classList.remove('box-opacity');          
+        box.classList.toggle('box-opacity');          
     
         return
     } 
     
-    box.classList.add( 'box-opacity' )
+    box.classList.toggle( 'box-opacity' )
 
 };
 
