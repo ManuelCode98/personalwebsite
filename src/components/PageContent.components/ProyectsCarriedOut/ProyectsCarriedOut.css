@@ -71,8 +71,6 @@
     height: 5.5rem;
     flex-wrap: wrap;
     transition: all 500ms;
-
-    border: 1px solid red;
     gap: 10px;
 
 }
