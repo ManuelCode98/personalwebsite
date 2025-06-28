@@ -4,7 +4,6 @@ const saveOrShowTheCard = ( { currentTarget }:React.MouseEvent<HTMLDivElement> )
 
     if( window.innerWidth <= 767 ){
 
-        console.log(window.innerWidth);
         const selectContainerProject = currentTarget;
         const selectImgCatalog = selectContainerProject.children[0];
         const selectContainerInfo = selectContainerProject.children[1];

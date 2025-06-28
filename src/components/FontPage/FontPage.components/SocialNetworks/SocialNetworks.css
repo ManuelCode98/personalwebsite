@@ -66,6 +66,13 @@
     } 
 }
 
+@media ( max-width: 712px ) and ( max-height: 1138px ){
+    .container-social-networks {
+        top: -15%;
+    }
+}
+
+
 @media ( max-width: 650px ){
 
     .icons {
@@ -103,3 +110,10 @@
     }
 
 } */
+
+@media ( max-width: 280px ){
+    .container-social-networks {
+        /* top: -15%; */
+        left: 3.5%;
+    }
+}

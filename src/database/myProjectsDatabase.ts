@@ -67,7 +67,7 @@ const myProjects: MyProjects[] = [
     {
         id:'16',
         name: 'Supermarket List',
-        img: 'https://i.ibb.co/M4k5RgB/Supermarket-list.jpg',
+        img: 'https://i.ibb.co/Q7q7S30q/image.png',
         linkPrototype: '',
         linkWeb: 'https://micarritodecompras.netlify.app/',
     },
