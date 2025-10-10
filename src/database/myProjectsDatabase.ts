@@ -121,7 +121,7 @@ const myProjects: MyProjects[] = [
         linkWeb: '',
     },
     {
-        id:'16',
+        id:'17',
         name: 'Encuesta',
         img: 'https://i.ibb.co/pjnpHDnF/rango-de-edades.png',
         linkPrototype: './prototype/proyecto-22/index.html',
