@@ -65,11 +65,18 @@ const myProjects: MyProjects[] = [
         linkWeb: '',
     },
     {
-        id:'9',
-        name: 'Encuesta',
-        img: 'https://i.ibb.co/pjnpHDnF/rango-de-edades.png',
-        linkPrototype: './prototype/proyecto-22/index.html',
-        linkWeb: '',
+        id:'16',
+        name: 'Supermarket List',
+        img: 'https://i.ibb.co/M4k5RgB/Supermarket-list.jpg',
+        linkPrototype: '',
+        linkWeb: 'https://micarritodecompras.netlify.app/',
+    },
+    {
+        id: '9',
+        name: 'Tienda de ropa deportiva',
+        img: 'https://i.ibb.co/n81R6fWG/fitnessmati.png',
+        linkPrototype:'',
+        linkWeb: 'https://fitnessmati.com/'
     },
     {
         id:'10',
@@ -111,6 +118,13 @@ const myProjects: MyProjects[] = [
         name: 'Menu colgante',
         img: 'https://i.ibb.co/DHb1XbCK/menu-que-cuelga.png',
         linkPrototype: './prototype/proyecto-01/index.html',
+        linkWeb: '',
+    },
+    {
+        id:'16',
+        name: 'Encuesta',
+        img: 'https://i.ibb.co/pjnpHDnF/rango-de-edades.png',
+        linkPrototype: './prototype/proyecto-22/index.html',
         linkWeb: '',
     },
 ];
